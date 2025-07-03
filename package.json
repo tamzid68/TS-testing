@@ -1,0 +1,32 @@
+{
+  "name": "ts-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamzid68/TS-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamzid68/TS-testing/issues"
+  },
+  "homepage": "https://github.com/tamzid68/TS-testing#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.71"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}

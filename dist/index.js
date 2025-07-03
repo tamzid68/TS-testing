@@ -1,10 +1,14 @@
 "use strict";
-function kgToLbs(weight) {
-    if (typeof weight === 'number')
-        return weight * 2.2;
-    else {
-        return parseFloat(weight) * 2.2;
-    }
-}
-kgToLbs(10);
-kgToLbs('10kg');
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const app = (0, express_1.default)();
+const port = 3000;
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
