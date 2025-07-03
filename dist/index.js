@@ -8,4 +8,3 @@ function kgToLbs(weight) {
 }
 kgToLbs(10);
 kgToLbs('10kg');
-//# sourceMappingURL=index.js.map
