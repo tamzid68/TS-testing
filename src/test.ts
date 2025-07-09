@@ -1,13 +1,23 @@
-class Person{
-    name: string="Tamzid";
+abstract class Shape{
+    abstract area(): number;
 
-    printName():void{
-        console.log(this.name);
+    display(): void {
+        console.log(`Area: ${this.area()}`);
+    };
+}
+
+class Circle extends Shape{
+    
+
+    constructor(protected radius:number){
+        super();
+    }
+
+    area():number{
+        return Math.PI* this.radius * this.radius;
     }
 }
 
-const asm = new Person();
 
-const getname:string = asm.name;
-asm.printName();
-console.log(getname+" is a good");
+ let circle = new Circle(15);
+ circle.display();
